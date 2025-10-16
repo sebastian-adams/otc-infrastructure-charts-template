@@ -50,3 +50,9 @@ charts:
     targetRevision: 0.25.1
     valueFile: "value-files/akhq/values.yaml"
   # Override values with local values file
+
+  elastic-operator:
+    namespace: monitoring
+    targetRevision: 8.18.1
+    parameters:
+      ingress.kibana.host: "admin.{{.Values.projectValues.rootDomain}}"
