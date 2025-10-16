@@ -32,7 +32,7 @@ charts:
     targetRevision: 22.2.0-bitnamilegacy
     valueFile: "value-files/kafka/values.yaml"
     parameters:
-      "kafka.replicaCount": "1"
+      "kafka.replicaCount": "2"
 
 #   Remote chart from public helm repo
 #  bitnami-kafka:
